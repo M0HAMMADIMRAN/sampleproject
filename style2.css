@@ -1,0 +1,151 @@
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 10px; 
+  border: 2px solid;
+}
+
+
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.media {
+  margin: 10px;
+  /* border: 1px solid; */
+  padding: 5px;
+}
+
+
+ .media .video-media{
+    position: relative;
+    /* left: 50%; */
+}
+
+
+#about {
+  color: darkblue;
+  font-style: italic;
+  font-size: medium;
+}
+
+
+h1, h2,h3, p {
+  margin: 25px;
+}
+
+
+form > label {
+  font-weight:lighter;
+}
+
+
+label + input {
+  margin-left: 20px;
+}
+
+
+input[type="text"] {
+  border: 3px outset;
+}
+input[type="email"]{
+  border: 3px outset;
+}
+input[type="password"]{
+  border: 3px outset;
+}
+
+
+
+p::first-letter {
+  font-size: 100%;
+  font-weight: bold;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 500px;
+  margin: 20px;
+}
+th, td {
+  border: 1px solid;
+  padding: 20px;
+}
+
+
+
+.navbar {
+  background-color: #2149a7;
+  padding: 20px;
+  text-align: center;
+ 
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 20px 100px;
+  margin:  2px;
+}
+
+.navbar a:hover {
+  background-color: #e9ec40;
+}
+.navbar .logo{
+display:  flex;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 10px; 
+  border: 2px solid;
+
+}
+
+/* list styling */
+.features {
+  margin: 20px;
+  padding-left: 40px;
+  color: red;
+}
+
+/* Contact_us  */
+
+#contact-form{
+  position: relative;
+  top: 100px;
+  left: 32%;
+  background-color: #dc9933;
+  width: 500px;
+  border-radius: 8px;
+  padding: 50px;
+}
+
+
+
+/* .container{
+  margin-top: 50px; 
+   display: flex;
+   width: 00px;
+    padding: 50px;
+    background-color: #514e4e;
+    border-radius: 8px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    position: absolute;
+   
+} */
+
+
+
+.form-control {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 100px;
+
+}
+
+
