@@ -69,6 +69,10 @@ hr {
     flex: 5; /* This is the key property for the sticky footer */
 }
 
+/* Positioning for media elements */
+/* .media .video-media {
+    position: static;
+} */
 
 /* Media Section */
 .media {
@@ -197,7 +201,7 @@ th, td {
 
 /* Contact Us page specific styles */
 body.contact-body {
-    background-image: url('img/photo-1643661100639-de5cdf7bcb80.avif');
+    background-image: url('img/background.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
