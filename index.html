@@ -1,66 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Simple Website</title>
-  <link rel="stylesheet" href="style2.css">
+    <meta charset="UTF-8">
+    <title>My Simple Website</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <img src="img/logo.jpg" alt="Logo" class="logo">
-  <a href="index.html" class="active">Home</a>
-  <a href="about2.html">About</a>
-  <a href="contact2.html">Contact Us</a>
+    <header>
+        <nav class="navbar">
+            <img src="img/logo.jpg" alt="Logo" class="logo">
+            <a href="index.html" class="active">Home</a>
+            <a href="about2.html">About</a>
+            <a href="contact2.html">Contact Us</a>
+        </nav>
+    </header>
 
-</nav>
-
-  </header>
-
-  <div>
-  <!-- <img src="img/logo.jpg" alt="Logo" class="logo"> -->
-  <h1>Welcome to Our Homepage</h1>
-</div>
-<hr>
-  <p>This page contains a table, image, video, and audio example.</p>
-
-  <h2>Sample Table</h2>
-  <table>
-    <tr>
-      <th>Name</th>
-      <th>Role</th>
-    </tr>
-    <tr>
-      <td>Alice</td>
-      <td>Developer</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>Designer</td>
-    </tr>
-  </table>
-<hr>
-  <h2>Key Features</h2>
-<ul class="features" type="Circle">
-  <li>Home page with all properties</li>
-  <li>Done with external CSS</li>
-  <li>It has image, video, and audio</li>
-  <li>Contact us form included</li>
-</ul>
-<hr>
-<div class="media" >
+    <div class="index-content-container">
+        <h1>Welcome to Our Homepage</h1>
+        <hr>
+        <p>This page contains a table, image, video, and audio example.</p>
+        
+        <h2>Sample Table</h2>
+         <table>
+            <tr>
+                <th>Project Name</th>
+                <td>Sample Web page</td>
+            </tr>
+            <tr>
+                <th>Technologies Used</th>
+                <td>HTML, CSS, JavaScript</td>
+            </tr>
+            <tr>
+                <th>Status</th>
+                <td>In Development</td>
+            </tr>
+            <tr>
+                <th>Key Goal</th>
+                <td>Create a responsive and user-friendly experience.</td>
+            </tr>
+        </table>
+        <hr>
+        <h2>Key Features</h2>
+        <ul class="features" type="Circle">
+            <li>Home page with all properties</li>
+            <li>Done with external CSS</li>
+            <li>It has image, video, and audio</li>
+            <li>Contact us form included</li>
+        </ul>
+        <hr>
+<div class="media">
   <h2>Media Examples</h2>
-  <img src="img/Picture2.jpg" alt="Sample Image" >
-   <!-- <br> -->
-   <!-- <h3> This is the video example</h3>  -->
-  <video class="video-media" width="500" height="280" controls>
-    <source src="img/1494295-hd_1920_1080_24fps.mp4" type="video/mp4">
-  </video>
-  <!-- <br> -->
-  <!-- <h3> This is the Audio Example</h3> -->
-  <audio class="media" controls>
-    <source src="img/Running_Up_That_Hill_Stranger_Things.mp3" type="audio/mpeg">
-  </audio>
+  
+  <div class="image-container">
+    <img src="img/Picture2.jpg" alt="Sample Image">
+    <div class="image-caption">A captivating visual.</div>
   </div>
+
+  <h3>Watch our sample video!</h3>
+  <p>This video demonstrates a cinematic shot, showcasing the smooth transitions and high quality we offer.</p>
+  <div class="video-container">
+    <video class="video-media" width="500" height="280" controls>
+      <source src="img/1494295-hd_1920_1080_24fps.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <h3>Enjoy the music!</h3>
+  <p>Turn up the volume and listen to this beautiful audio track, a perfect backdrop for any moment.</p>
+  <div class="audio-container">
+    <audio class="media" controls>
+      <source src="img/Running_Up_That_Hill_Stranger_Things.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+</div>
+    </div>
+    
+    <footer class="static-footer">
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about2.html">About</a>
+            <a href="contact2.html">Contact Us</a>
+        </nav>
+        <p>&copy; 2025 My Simple Website. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

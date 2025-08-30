@@ -1,60 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="style2.css">
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-    <img src="img/logo.jpg" alt="Logo" class="logo">
-  <a href="index.html" class="active">Home</a>
-  <a href="about2.html">About</a>
-  <a href="contact2.html">Contact Us</a>
-</nav>
-  </header>
-  <div class="container">
-  <!-- <h1>Contact the Developers</h1> -->
+    <header>
+        <nav class="navbar">
+            <img src="img/logo.jpg" alt="Logo" class="logo">
+            <a href="index.html" class="active">Home</a>
+            <a href="about2.html">About</a>
+            <a href="contact2.html">Contact Us</a>
+        </nav>
+    </header>
 
-
-  <form id="contact-form">
-
-  <h1>Contact the Developers</h1>
-  <div class="form-control">
-    <label for="name">Name:</label>
-    <input type="name" name="fullname" required minlength="3" pattern="[A-Za-z\s]+" placeholder="Enter Full Name">
-<br><br>
-
-    <label for="email">Email:</label>
-    <input type="email" name="email" required placeholder="Enter Valid Email"><br><br>
-
-    <label for="pass">Password:</label>
-<input type="password" name="password" required 
-pattern=".{6,}" 
-title="Password must be at least 6 characters long" 
-placeholder="Enter Password">
-
-
-
-<br><br>
-<label for="radio">Enter Gender</label>
-<input type="radio" name="gender" value="Male" required> Male
-<input type="radio" name="gender" value="Female" required> Female
-<input type="radio" name="gender" value="Other" required> Other
-
-<br><br>
-
-    <button type="submit">Submit</button>
-    <button type="button">Cancel</button>
-
-
+    <div class="content-container">
+        <div class="container">
+            <form id="contact-form">
+                <h1>Contact the Developers</h1>
+                <div class="form-control">
+                    <label for="name">Name:</label>
+                    <input type="text" name="fullname" required minlength="3" pattern="[A-Za-z\s]+" placeholder="Enter Full Name">
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" required placeholder="Enter Valid Email">
+                    <br><br>
+                    <label for="pass">Password:</label>
+                    <input type="password" name="password" required 
+                           pattern=".{6,}" 
+                           title="Password must be at least 6 characters long" 
+                           placeholder="Enter Password">
+                    <br><br>
+                    <label for="radio">Enter Gender</label>
+                    <input type="radio" name="gender" value="Male" required> Male
+                    <input type="radio" name="gender" value="Female" required> Female
+                    <input type="radio" name="gender" value="Other" required> Other
+                    <br><br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="3" cols="40" placeholder="Enter your message here..."></textarea>
+                    <br><br>
+                    <button type="submit">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button">Cancel</button>
+                </div>
+            </form>
+        </div>
     </div>
-
-
-  </div>
-
-
-  </form>
+    
+    <footer class="static-footer">
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about2.html">About</a>
+            <a href="contact2.html">Contact Us</a>
+        </nav>
+        <p>&copy; 2025 My Simple Website. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

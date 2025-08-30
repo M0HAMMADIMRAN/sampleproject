@@ -1,151 +1,266 @@
-.logo {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-  border-radius: 10px; 
-  border: 2px solid;
-}
+/* style2.css */
 
-
+/* Common styles */
 body {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-
-.media {
-  margin: 10px;
-  /* border: 1px solid; */
-  padding: 5px;
+h1, h2, h3, p {
+    margin: 25px;
 }
 
-
- .media .video-media{
-    position: relative;
-    /* left: 50%; */
+hr {
+    border-top: 1px solid #ccc;
+    margin: 20px;
 }
 
-
-#about {
-  color: darkblue;
-  font-style: italic;
-  font-size: medium;
-}
-
-
-h1, h2,h3, p {
-  margin: 25px;
-}
-
-
-form > label {
-  font-weight:lighter;
-}
-
-
-label + input {
-  margin-left: 20px;
-}
-
-
-input[type="text"] {
-  border: 3px outset;
-}
-input[type="email"]{
-  border: 3px outset;
-}
-input[type="password"]{
-  border: 3px outset;
-}
-
-
-
-p::first-letter {
-  font-size: 100%;
-  font-weight: bold;
-}
-
-
-table {
-  border-collapse: collapse;
-  width: 500px;
-  margin: 20px;
-}
-th, td {
-  border: 1px solid;
-  padding: 20px;
-}
-
-
-
+/* Navbar */
 .navbar {
-  background-color: #2149a7;
-  padding: 20px;
-  text-align: center;
- 
+    background-color: #2149a7;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navbar a {
-  color: white;
-  text-decoration: none;
-  padding: 20px 100px;
-  margin:  2px;
+    color: white;
+    text-decoration: none;
+    padding: 20px 100px;
+    margin: 2px;
 }
 
 .navbar a:hover {
-  background-color: #e9ec40;
-}
-.navbar .logo{
-display:  flex;
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-  border-radius: 10px; 
-  border: 2px solid;
-
+    background-color: #e9ec40;
 }
 
-/* list styling */
-.features {
-  margin: 20px;
-  padding-left: 40px;
-  color: red;
-}
-
-/* Contact_us  */
-
-#contact-form{
-  position: relative;
-  top: 100px;
-  left: 32%;
-  background-color: #dc9933;
-  width: 500px;
-  border-radius: 8px;
-  padding: 50px;
-}
-
-
-
-/* .container{
-  margin-top: 50px; 
-   display: flex;
-   width: 00px;
-    padding: 50px;
-    background-color: #514e4e;
-    border-radius: 8px;
-    margin-left: 100px;
-    margin-right: 100px;
-    text-align: center;
+.navbar .logo {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 2px solid;
     position: absolute;
-   
-} */
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Content container to fill the space and push the footer down */
+.content-container {
+    margin-top: 20px; /* Space for the fixed navbar */
+    flex: 1; /* This is the key property for the sticky footer */
+}
+.index-content-container{
+    margin-top: 50px; /* Space for the fixed navbar */
+    flex: 5; /* This is the key property for the sticky footer */
+}
+.about-content-container{
+    margin-top: 50px; /* Space for the fixed navbar */
+    flex: 5; /* This is the key property for the sticky footer */
+}
 
 
+/* Media Section */
+.media {
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items:center; /* Centers the media elements */
+}
+
+.media img,
+.media video,
+.media audio {
+  margin: 30px 0; /* Adds spacing between elements */
+}
+
+/* Image Animation */
+.image-container {
+  position: relative;
+  overflow:hidden; /* Hides the overflowing caption */
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease-in-out; /* Smooth scale transition */
+}
+
+.image-container:hover img {
+  transform: scale(1.05); 
+  /* Scales the image up on hover */
+}
+
+
+/* Video Transition */
+.video-container video {
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.video-container video:hover {
+  box-shadow: 0 0 50px 2px rgba(33, 73, 167, 0.7); /* Glow effect on hover */
+}
+
+/* Audio Animation */
+.audio-container {
+  position: relative;
+  display: inline-block; /* Essential for the pseudo-element */
+}
+
+.audio-container audio {
+  position: relative;
+  z-index: 2; /* Ensures the audio player is on top */
+  transition: transform 0.3s ease-in-out;
+}
+
+.audio-container:hover audio {
+  transform: translateY(-3px); /* Lifts the audio player on hover */
+}
+
+
+
+
+
+/* Footer styling */
+.static-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    /* margin-top: auto; is crucial for the sticky footer technique */
+    margin-top: auto;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 500px;
+    margin: 20px;
+}
+
+th, td {
+    border: 1px solid;
+    padding: 20px;
+}
+
+/* About Us page specific styles */
+#about {
+    color: darkblue;
+    font-style: italic;
+    font-size: medium;
+}
+
+/* Grid layout example for the About Us page */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.team-member {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Contact Us page specific styles */
+body.contact-body {
+    background-image: url('img/photo-1643661100639-de5cdf7bcb80.avif');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#contact-form {
+    position: relative;
+    top: 100px;
+    left: 32%;
+    background-color: #dc9933;
+    width: 500px;
+    border-radius: 8px;
+    padding: 50px;
+}
 
 .form-control {
     width: 100%;
     margin-bottom: 20px;
     margin-left: 100px;
-
 }
 
+/* Form element styling */
+form > label {
+    font-weight: lighter;
+}
 
+label + input {
+    margin-left: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border: 3px outset;
+}
+
+/* Pseudos-element styling */
+p::first-letter {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar a {
+        padding: 10px 20px;
+    }
+    .navbar .logo {
+        position: static;
+        transform: none;
+    }
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    #contact-form {
+        width: 90%;
+        left: 5%;
+        padding: 20px;
+    }
+    .form-control {
+        margin-left: 0;
+    }
+    .media .video-media {
+        width: 100%;
+        height: auto;
+    }
+}
