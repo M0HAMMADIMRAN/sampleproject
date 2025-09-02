@@ -39,7 +39,7 @@ hr {
 }
 
 .navbar a:hover {
-    background-color: #e9ec40;
+    background-color: #537fe7;
 }
 
 .navbar .logo {
@@ -142,16 +142,16 @@ hr {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     /* margin-top: auto; is crucial for the sticky footer technique */
-    /* margin-top: auto; */
+    margin-top: auto;
 }
 
 .footer-nav {
     display: flex;
     justify-content: center;
-    gap: 50px;
-    /* margin-bottom: 10px; */
+    gap: 70px;
+    margin-bottom: 10px;
 }
 
 .footer-nav a {
@@ -209,7 +209,7 @@ body.contact-body {
     position: relative;
     top: 70px;
     margin: auto;
-    background-color: #dc9933;
+    background-color: #5ba8f0;
     width: 500px;
     border-radius: 8px;
     padding: 50px;
